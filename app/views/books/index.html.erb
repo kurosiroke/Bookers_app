@@ -1,11 +1,14 @@
-
 <h1>Books</h1>
-
+<div class="book-wrap">
 <% @books.each do |book| %>
 
-  <p>Title</p>
+  <div class="book-box">
+   <div class="book-comment">
+     <span class="book-body"><%= book.body %></span>
+     <span class="book-title"><%= book.title %></span>
+   </div>
+  </div>
 
-  <p>Body</p>
 
     <%= link_to "Show", book_path(book.id) %>
     <%= link_to "Edit", edit_book_path(book.id) %>
@@ -13,8 +16,25 @@
 
 <% end %>
 
-<h1>New book</h1>
-<%= form_with model: Book.new do |f| %>
+</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Body</th>
+        <th colspan="3"></th>
+     </tr>
+     <tbody></tbody>
+    </thead>
+  </table>
+
+
+
+
+<h2>New book</h2>
+<%= form_with model: @list do |f| %>
+
   <h4>Title</h4>
   <%= f.text_field :title %>
 
