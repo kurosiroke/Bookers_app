@@ -13,3 +13,67 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+}
+
+html {
+  display: block;
+}
+
+:root {
+  view-transition-name: root;
+}
+
+
+
+head {
+  display: none;
+}
+
+
+body {
+  font-family:  verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+.h1 {
+  font-size: 2em;
+}
+
+.table {
+
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+.h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.form {
+  display: block;
+  margin-top: 0em;
+}
+
+h4 {
+  display: block;
+  cursor: default;
+}
+
+.div {
+  display: block;
+  margin-bottom: 10px;
+}
+

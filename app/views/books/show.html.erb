@@ -1,14 +1,18 @@
-<p>
-  <storng>TItle:</storng>
-  トラブル知らずのシステム設計
-</p>
+<html>
+ <body>
 
 <p>
-  <storng>Body:</storng>
-  システム設計の要点を図解で説明してくれます
+  <strong>Title:</strong>
+  <%= @book.title %>
 </p>
+<p>
+<strong>Body:</strong>
+  <%= @book.body %>
+</p>
+  <%= link_to "Edit", edit_book_path(@book.id) %>
+ |
+  <%= link_to "Back", books_path %>
 
-<%= link_to "Edit",edit_book_path %>
 
-<%= link_to "Back", books_path %>
-
+ </body>
+</html>
